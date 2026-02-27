@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>つくるPMs — PMひとりで、つくりきる。</title>
+    <meta name="description"
+        content="デザインができる・コードが書ける、つくれるPMが最短2日で動くプロダクトを立ち上げる。10人の開発チームに発注しなくても、PMひとりで新規事業をつくりきる新しいプロダクト開発支援サービス。">
+    <meta name="keywords" content="PM,プロダクトマネージャー,新規事業,プロダクト開発,MVP,プロトタイプ,PM支援,伴走支援,顧問,つくるPMs">
+    <meta name="author" content="株式会社フォルテ">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pm-guild.github.io/lp/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="つくるPMs — PMひとりで、つくりきる。">
+    <meta property="og:description" content="デザインができる・コードが書ける、つくれるPMが最短2日で動くプロダクトを立ち上げる。新規事業のプロダクト開発支援サービス。">
+    <meta property="og:url" content="https://pm-guild.github.io/lp/">
+    <meta property="og:site_name" content="つくるPMs">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="つくるPMs — PMひとりで、つくりきる。">
+    <meta name="twitter:description" content="デザインができる・コードが書ける、つくれるPMが最短2日で動くプロダクトを立ち上げる。新規事業のプロダクト開発支援サービス。">
+    <meta property="og:image" content="https://pm-guild.github.io/lp/ogp.png">
+    <meta name="twitter:image" content="https://pm-guild.github.io/lp/ogp.png">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"つくるPMs","description":"デザインができる・コードが書ける、つくれるPMが最短2日で動くプロダクトを立ち上げる新しいプロダクト開発支援サービス。","url":"https://pm-guild.github.io/lp/","provider":{"@type":"Organization","name":"株式会社フォルテ"},"areaServed":"JP","inLanguage":"ja","serviceType":["プロダクト開発支援","PM支援","新規事業支援","プロダクトマネジメント顧問"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"プラン","itemListElement":[{"@type":"Offer","name":"爆速新規事業プラン","description":"アイデア段階から最短2日で動くプロダクトを立ち上げ","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"JPY","price":"1200000","description":"120万〜200万円"}},{"@type":"Offer","name":"つくる伴走プラン","description":"つくるPMがチームに入り込み週8〜24時間手を動かしながらプロダクトを育てる","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"JPY","price":"1000000","description":"月額100万円〜"}},{"@type":"Offer","name":"壁打ち顧問プラン","description":"経験豊富なパートナーが週1〜2時間プロダクト戦略の壁打ち相手として対応","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"JPY","price":"300000","description":"月額30万円〜"}}]}}
+</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-59Y1S8D6XV"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-59Y1S8D6XV');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="nav-inner"><a href="#" class="logo">つくる<span>PMs</span></a><button class="mobile-menu-btn"
+                aria-label="メニュー"
+                onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+            <div class="nav-links"><a href="#problems">課題</a><a href="#about">つくるPMsとは</a><a href="#plans">プラン</a><a
+                    href="#pricing">料金</a><a href="#members">メンバー</a><a href="#faq">FAQ</a><a href="https://forms.gle/vVJh4pbox4MyoUeX9" target="_blank" rel="noopener"
+                    class="nav-cta">無料相談</a></div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-anim">
+                <div class="code-stream">const product = await buildMVP({ design: true, code: true }); // ship it fast →
+                    review → iterate → deploy → measure → learn → rebuild → const product = await buildMVP({ design:
+                    true, code: true }); // ship it fast → review → iterate → deploy</div>
+                <div class="code-stream">function createUI() { return &lt;App theme="bold"&gt;&lt;Hero /&gt;&lt;Features
+                    /&gt;&lt;Pricing /&gt;&lt;/App&gt; } // render → test → refine → function createUI() { return
+                    &lt;App theme="bold"&gt;&lt;Hero /&gt;&lt;Features /&gt;&lt;/App&gt; }</div>
+                <div class="code-stream">figma.export({ format: "svg" }); api.deploy({ env: "production" });
+                    analytics.track("launch"); // go live → figma.export({ format: "svg" }); api.deploy({ env:
+                    "production" }); analytics.track("launch");</div>
+                <div class="code-stream">SELECT * FROM user_feedback WHERE score > 4 ORDER BY created_at DESC; -- listen
+                    → build → validate → SELECT * FROM user_feedback WHERE score > 4 ORDER BY created_at DESC;</div>
+                <div class="code-stream">git commit -m "feat: add onboarding flow v3" &amp;&amp; git push origin main //
+                    day2 prototype ready → git commit -m "feat: add onboarding flow v3" &amp;&amp; git push origin main
+                </div>
+                <div class="code-stream">@apply flex items-center gap-4; .card { @apply rounded-xl shadow-lg p-6; } /*
+                    design system → build → ship */ @apply flex items-center gap-4; .card { @apply rounded-xl shadow-lg
+                    p-6; }</div>
+                <div class="code-stream">await pm.think({ why: true, what: true, how: "AI" }); pm.design(); pm.code();
+                    pm.ship(); // one person, full stack → await pm.think({ why: true, what: true, how: "AI" });</div>
+                <div class="code-stream">Frame 1 → Component → Auto Layout → Prototype → Handoff → Build → Test → Launch
+                    → Iterate → Frame 1 → Component → Auto Layout → Prototype → Handoff → Build → Test</div>
+                <div class="code-stream">const roadmap = priorities.sort((a,b) => b.impact - a.cost).slice(0, 5); //
+                    focus → execute → ship → const roadmap = priorities.sort((a,b) => b.impact - a.cost).slice(0, 5);
+                </div>
+                <div class="code-stream">docker compose up -d &amp;&amp; pnpm dev --turbo // local env ready in 30s →
+                    docker compose up -d &amp;&amp; pnpm dev --turbo // local env ready</div>
+                <div class="code-stream">interface Product { vision: string; metrics: KPI[]; team: Member[]; } // define
+                    → align → build → interface Product { vision: string; metrics: KPI[]; team: Member[]; }</div>
+                <div class="code-stream">useSWR('/api/dashboard', fetcher, { refreshInterval: 3000 }); // real-time →
+                    monitor → iterate → useSWR('/api/dashboard', fetcher, { refreshInterval: 3000 });</div>
+                <div class="code-stream">npx create-next-app@latest --typescript --tailwind --app // scaffold →
+                    customize → deploy → npx create-next-app@latest --typescript --tailwind --app</div>
+                <div class="code-stream">ALTER TABLE features ADD COLUMN priority INT DEFAULT 0; -- backlog → sprint →
+                    release → ALTER TABLE features ADD COLUMN priority INT DEFAULT 0;</div>
+                <div class="code-stream">export default function Layout({ children }) { return &lt;main
+                    className="mx-auto max-w-7xl"&gt;{children}&lt;/main&gt; } // structure → style → ship</div>
+                <div class="code-stream">pm.validate({ hypothesis: true, prototype: true, feedback: "collected" }); //
+                    learn → pivot → grow → pm.validate({ hypothesis: true, prototype: true });</div>
+                <div class="code-stream">const insights = await analyzeUserBehavior({ cohort: "new", period: "7d" }); //
+                    data → decision → action → const insights = await analyzeUserBehavior({ cohort: "new" });</div>
+                <div class="code-stream">kubectl apply -f deployment.yaml &amp;&amp; kubectl rollout status deploy/app
+                    // zero-downtime → scale → kubectl apply -f deployment.yaml</div>
+                <div class="code-stream">Wireframe → Mockup → Prototype → User Test → Iterate → High-fi → Dev Handoff →
+                    QA → Ship → Wireframe → Mockup → Prototype → User Test</div>
+                <div class="code-stream">const sprint = { goal: "launch MVP", velocity: 21, burndown: "on-track" }; //
+                    plan → execute → retro → const sprint = { goal: "launch MVP", velocity: 21 };</div>
+                <div class="code-stream">fetch("/api/v2/products", { method: "POST", body: JSON.stringify(spec) }); //
+                    create → test → iterate → fetch("/api/v2/products", { method: "POST" });</div>
+                <div class="code-stream">pnpm test --coverage &amp;&amp; pnpm build &amp;&amp; vercel deploy --prod //
+                    green → build → live → pnpm test --coverage &amp;&amp; pnpm build &amp;&amp; vercel deploy</div>
+                <div class="code-stream">Component → Storybook → Visual Regression → Accessibility Audit → Merge →
+                    Deploy → Monitor → Component → Storybook → Visual Regression</div>
+                <div class="code-stream">const persona = { role: "PM", skills: ["design","code","strategy"], speed:
+                    "fast" }; // one person, full stack → const persona = { role: "PM", skills: ["design","code"] };
+                </div>
+            </div>
+            <div class="hero-float hero-float-1">
+                <div class="fl-header">
+                    <div class="fl-dot active"></div>
+                    <div class="fl-dot"></div>
+                    <div class="fl-dot"></div>
+                </div>
+                <div class="fl-bar"></div>
+                <div class="fl-bar short"></div>
+                <div class="fl-block"></div>
+                <div class="fl-btn"></div>
+            </div>
+            <div class="hero-float hero-float-2">
+                <div class="phone-notch"></div>
+                <div class="phone-status"><span class="phone-time">9:41</span><span class="phone-icons">···</span></div>
+                <div class="fl-bar" style="margin-top:6px"></div>
+                <div class="fl-block" style="height:22px"></div>
+                <div class="fl-block" style="height:22px"></div>
+                <div class="fl-btn" style="width:50px;margin:6px auto;border-radius:10px"></div>
+                <div class="phone-home"></div>
+            </div>
+            <div class="hero-float hero-float-3">
+                <div class="fl-header">
+                    <div class="fl-dot"></div>
+                    <div class="fl-dot active"></div>
+                    <div class="fl-dot"></div>
+                </div>
+                <div class="fl-block"></div>
+                <div class="fl-bar"></div>
+                <div class="fl-btn"></div>
+            </div>
+            <div class="hero-float hero-float-4">
+                <div class="fl-bar accent"></div>
+                <div class="fl-block"></div>
+                <div class="fl-bar short"></div>
+            </div>
+            <div class="hero-float hero-float-5">
+                <div class="fl-header">
+                    <div class="fl-dot"></div>
+                    <div class="fl-dot"></div>
+                    <div class="fl-dot"></div>
+                </div>
+                <div class="fl-bar"></div>
+                <div class="fl-block" style="height:18px"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-eyebrow fade-in">PRODUCT MANAGEMENT × DESIGN × ENGINEERING</div>
+                <h1 class="fade-in">PMひとりで、<br><em>つくりきる。</em></h1>
+                <p class="hero-sub fade-in">10人の開発チームに発注しなくても、デザインができてコードも書けるPMがひとりいれば、2日目にはプロダクトが動いてる。</p>
+                <a href="https://forms.gle/vVJh4pbox4MyoUeX9" target="_blank" rel="noopener" class="hero-cta fade-in">まず話してみる<svg viewBox="0 0 16 16" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="problems" id="problems">
+        <div class="container">
+            <div class="section-label">Problems</div>
+            <h2 class="section-title">こんな課題を抱えているチームへ</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>新規事業のアイデアはあるのに、見せられるものがない…</h3>
+                    <p>役員承認やユーザーヒアリングのために「触れるもの」が必要なのに、開発チームの立ち上げから始めると半年かかる。スライドや仕様書だけでは事業の手触りが伝わらない。</p>
+                </div>
+                <div class="problem-card">
+                    <h3>PMと開発チームの間で伝言ゲームが起きている…</h3>
+                    <p>要件を書く人とつくる人が別なので、意図がズレる。手戻りが増え、スケジュールが遅れ、コストが膨らむ。</p>
+                </div>
+                <div class="problem-card">
+                    <h3>AIでつくれる時代なのに、従来の開発プロセスから抜け出せない…</h3>
+                    <p>RFP作成→ベンダー選定→要件定義→基本設計→…。この時代、もっと速くつくって検証できるはず。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-label">What we do</div>
+            <h2 class="section-title">つくるPMsとは</h2>
+            <div class="about-core">
+                <h3>考える人が、つくる。<br>だから速い。</h3>
+                <p>AIで高速にモノづくりができるこの時代に最も価値が高いのは、デザイン・エンジニアリングへの専門的な理解を前提として「なぜ・なにを・AIでどうつくるか」をすばやく決め、自分たちでつくってしまうPMの存在です。デザイナー・エンジニアとして第一線で活動し、会社経営・コミュニティ運営をおこなってきた者たちが、あなたの会社に入ります。
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 52 52" fill="none">
+                            <rect width="52" height="52" rx="12" fill="#e8edff" />
+                            <path d="M28.5 12L17 28h7.5l-2 12L37 24h-7.5l2-12z" stroke="#1a4fff" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                            <path d="M28.5 12L17 28h7.5l-2 12L37 24h-7.5l2-12z" fill="#1a4fff" opacity="0.1" />
+                        </svg></div>
+                    <h3>2日目からプロダクトが動く</h3>
+                    <p>デザインもコードも書けるPMが自らつくるので、ヒアリング翌日には触れるものが存在する。伝言ゲームが起きない。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 52 52" fill="none">
+                            <rect width="52" height="52" rx="12" fill="#e8edff" />
+                            <path d="M33 19c-1.5-2.5-4.3-4-7.5-4A8.5 8.5 0 0017 23.5" stroke="#1a4fff"
+                                stroke-width="2.2" stroke-linecap="round" fill="none" />
+                            <path d="M15 19.5l2 4 4-2" stroke="#1a4fff" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" />
+                            <path d="M19 33c1.5 2.5 4.3 4 7.5 4A8.5 8.5 0 0035 28.5" stroke="#1a4fff" stroke-width="2.2"
+                                stroke-linecap="round" fill="none" />
+                            <path d="M37 32.5l-2-4-4 2" stroke="#1a4fff" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" />
+                            <circle cx="26" cy="26" r="9" fill="#1a4fff" opacity="0.06" />
+                        </svg></div>
+                    <h3>何度でもつくりなおす、何パターンもつくる</h3>
+                    <p>「つくってから考える」を前提としたプロセス。1案に固執せず、複数パターンを実際のプロダクトとして比較検討できる。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 52 52" fill="none">
+                            <rect width="52" height="52" rx="12" fill="#e8edff" />
+                            <path d="M26 13l-9 4v7c0 6.5 3.8 10.8 9 13 5.2-2.2 9-6.5 9-13v-7l-9-4z" stroke="#1a4fff"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                            <path d="M26 13l-9 4v7c0 6.5 3.8 10.8 9 13 5.2-2.2 9-6.5 9-13v-7l-9-4z" fill="#1a4fff"
+                                opacity="0.08" />
+                            <path d="M22.5 26l2.5 2.5 5-5" stroke="#1a4fff" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></div>
+                    <h3>専門家が後ろに控えている</h3>
+                    <p>PMが高速でつくったものを、デザイン・フロントエンド・バックエンド・モバイルの専門家が監修。使い勝手がよく、後続の開発コストが最小になる設計を担保。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans" id="plans">
+        <div class="container">
+            <div class="section-label">Plans</div>
+            <h2 class="section-title">3つの入り方</h2>
+            <p class="section-lead">状況やフェーズに合わせて、最適なプランをご提案します。</p>
+            <div class="plans-stack">
+                <div class="plan-card">
+                    <div class="plan-deco-wrap">
+                        <div class="glow-1"></div>
+                        <div class="glow-2"></div>
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                        <div class="deco-3"></div>
+                        <div class="deco-4"></div>
+                        <div class="deco-5"></div>
+                    </div>
+                    <div class="plan-header">
+                        <div class="plan-name">爆速新規事業プラン</div>
+                        <div class="plan-desc">
+                            アイデア段階から最短2日で動くプロダクトを立ち上げ、複数パターンを実際に触りながら比較検討。役員承認・ユーザー検証に使えるレベルまで一気に仕上げるプランです。</div>
+                    </div>
+                    <div class="plan-grid">
+                        <div class="plan-col">
+                            <div class="plan-col-title">タイムライン例</div>
+                            <table class="timeline">
+                                <tr>
+                                    <th>Day 1</th>
+                                    <td>ヒアリングと要件整理。ゴールを握る</td>
+                                </tr>
+                                <tr>
+                                    <th>Day 2–4</th>
+                                    <td>動くプロダクトをつくり、触りながら議論</td>
+                                </tr>
+                                <tr>
+                                    <th>Day 5–7</th>
+                                    <td>体験のブラッシュアップ。複数パターン検証</td>
+                                </tr>
+                                <tr>
+                                    <th>Day 8–14</th>
+                                    <td>プロダクトの価値を言語化。ビジネスモデルとの整合</td>
+                                </tr>
+                                <tr>
+                                    <th>Day 15〜</th>
+                                    <td>役員承認・ステークホルダー・ユーザーからのフィードバックを受けてアップデート</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="plan-col">
+                            <div class="plan-col-title">成果</div>
+                            <ul>
+                                <li>2日目から動く・触れるプロダクト</li>
+                                <li>Web〜モバイルアプリまで価値が体感できるレベルのもの</li>
+                                <li>何度でもつくりなおし、何パターンでもつくる</li>
+                                <li>専門家監修による高品質な設計</li>
+                                <li>ビジネスモデルとプロダクト戦略の整合ドキュメント</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-deco-wrap">
+                        <div class="glow-1"></div>
+                        <div class="glow-2"></div>
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                        <div class="deco-3"></div>
+                        <div class="deco-4"></div>
+                        <div class="deco-5"></div>
+                    </div>
+                    <div class="plan-header">
+                        <div class="plan-name">つくる伴走プラン</div>
+                        <div class="plan-desc">
+                            つくるPMがチームに入り込み、週8〜24時間手を動かしながらプロダクトの方向性を定めて実行。シニアパートナーによる品質管理・ディレクション付きで、中長期的にプロダクトを育てていくプランです。
+                        </div>
+                    </div>
+                    <div class="plan-grid">
+                        <div class="plan-col">
+                            <div class="plan-col-title">体制</div>
+                            <ul>
+                                <li>つくるPMが週8〜24時間稼働し、手を動かしながらプロダクトの方向性を定めて実行</li>
+                                <li>パートナー（シニアメンバー）が週1〜2時間、品質管理・ディレクション・意思決定の壁打ち</li>
+                            </ul>
+                        </div>
+                        <div class="plan-col">
+                            <div class="plan-col-title">やること例</div>
+                            <ul>
+                                <li>「何をつくるべきか」の整理と優先順位づけ</li>
+                                <li>仮説を立て、自ら手を動かしてプロダクトで検証</li>
+                                <li>ステークホルダーやユーザーの声を集め、方向性を継続的に調整</li>
+                                <li>パートナーによる定期的な品質レビューとディレクション</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-deco-wrap">
+                        <div class="glow-1"></div>
+                        <div class="glow-2"></div>
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                        <div class="deco-3"></div>
+                        <div class="deco-4"></div>
+                        <div class="deco-5"></div>
+                    </div>
+                    <div class="plan-header">
+                        <div class="plan-name">壁打ち顧問プラン</div>
+                        <div class="plan-desc">
+                            経験豊富なパートナーが週1〜2時間、プロダクト戦略の壁打ち相手として定期的に対応。必要に応じてその場でプロトタイプをつくり、方向性を具体的に示す軽量プランです。</div>
+                    </div>
+                    <div class="plan-grid">
+                        <div class="plan-col">
+                            <div class="plan-col-title">体制</div>
+                            <ul>
+                                <li>パートナーが週1〜2時間、定期的にご相談に対応</li>
+                            </ul>
+                        </div>
+                        <div class="plan-col">
+                            <div class="plan-col-title">やること例</div>
+                            <ul>
+                                <li>プロダクト戦略の壁打ち・セカンドオピニオン</li>
+                                <li>その場でつくって方向性を示す</li>
+                                <li>デザイン・技術選定のアドバイス</li>
+                                <li>チームの課題に対するコーチング</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-label">Pricing</div>
+            <h2 class="section-title">料金</h2>
+            <div class="pricing-table-wrap">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>プラン</th>
+                            <th>料金目安</th>
+                            <th>備考</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="plan-name-cell">爆速新規事業プラン</td>
+                            <td class="price-cell">100〜300万円</td>
+                            <td>プロダクトの難易度・スケジュールにより変動</td>
+                        </tr>
+                        <tr>
+                            <td class="plan-name-cell">つくる伴走プラン</td>
+                            <td class="price-cell">月額80万円〜</td>
+                            <td>つくるPMの週8〜24時間稼働 ＋ パートナーによる品質管理・ディレクション</td>
+                        </tr>
+                        <tr>
+                            <td class="plan-name-cell">壁打ち顧問プラン</td>
+                            <td class="price-cell">月額30万円〜</td>
+                            <td>パートナーが週1〜2時間対応</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="pricing-note">※ プロジェクトの規模や内容に応じてお見積りいたします。まずはお気軽にご相談ください。</p>
+        </div>
+    </section>
+
+    <section class="members" id="members">
+        <div class="container">
+            <div class="section-label">Members</div>
+            <h2 class="section-title">パートナー</h2>
+            <p class="section-lead">デザイナー・エンジニアとして第一線で活動し、会社経営・コミュニティ運営をおこなってきた者たちです。</p>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-top"><img class="member-avatar" src="img-hirono.jpg" alt="広野 萌">
+                        <div>
+                            <div class="member-name">広野 萌</div>
+                            <div class="member-tagline">デザイン × プロダクト × 金融</div>
+                            <div class="member-titles">株式会社フォルテ代表取締役 / 一般社団法人デザインシップ代表理事</div>
+                        </div>
+                    </div>
+                    <p class="member-bio">
+                        ヤフー株式会社にて新規事業企画やモバイルアプリのUX推進を手掛けたのち、2015年に株式会社FOLIO（現SBIグループ）を共同創業。Chief Design Officer兼プロダクトマネージャーとしてオンライン証券を立ち上げる。2018年に一般社団法人デザインシップを設立し、カンファレンスやデザインスクールなどの事業を運営。2021年に株式会社フォルテを設立し、規制産業からエンタメ産業まで幅広く新規事業のデジタルプロダクト開発を支援。2021年より内閣官房IT総合戦略室を経てデジタル庁所属。2022年グッドデザイン賞受賞。広告電通賞選考委員。
+                    </p>
+                    <div class="member-tags"><span class="member-tag">UI/UXデザイン</span><span
+                            class="member-tag">プロダクトマネジメント</span><span class="member-tag">サービスデザイン</span><span
+                            class="member-tag">新規事業</span></div><a href="https://x.com/hajipion" target="_blank"
+                        rel="noopener" class="member-x"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>@hajipion</a>
+                </div>
+                <div class="member-card">
+                    <div class="member-top"><img class="member-avatar" src="img-matsutate.jpg" alt="松館 大輝">
+                        <div>
+                            <div class="member-name">松館 大輝</div>
+                            <div class="member-tagline">エンジニアリング × モバイル × 技術戦略</div>
+                            <div class="member-titles">デジタル庁エンジニアユニット長 / 一般社団法人トライスイフト理事</div>
+                        </div>
+                    </div>
+                    <p class="member-bio">学生時代からiOSアプリ開発を始め、スタートアップ数社で企画から保守まで一気通貫で経験した後に独立。国際カンファレンス「try! Swift
+                        Tokyo」メインオーガナイザー。FOLIO、デジタル庁を経て、タイミー・TVer・chocoZAP（RIZAP）など多数の企業で技術顧問・アドバイザリーを歴任。著書「iOSアプリ設計パターン入門」。
+                    </p>
+                    <div class="member-tags"><span class="member-tag">iOS / モバイル</span><span
+                            class="member-tag">技術戦略</span><span class="member-tag">アーキテクチャ設計</span><span
+                            class="member-tag">技術顧問</span></div><a href="https://x.com/d_date" target="_blank"
+                        rel="noopener" class="member-x"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>@d_date</a>
+                </div>
+                <div class="member-card">
+                    <div class="member-top"><img class="member-avatar" src="img-maidol.jpg" alt="浪川 舞（まいどる）">
+                        <div>
+                            <div class="member-name">浪川 舞（まいどる）</div>
+                            <div class="member-tagline">PM × エンジニアリング × コミュニティ</div>
+                            <div class="member-titles">合同会社PeerQuest代表 / 認定スクラムプロダクトオーナー（CSPO）</div>
+                        </div>
+                    </div>
+                    <p class="member-bio">
+                        武蔵野音楽大学ピアノ専攻卒業後、ヤマハ特約楽器店で音楽教室の運営企画に従事。エンジニアへ転向し証券システムやIoT事業など複数プロジェクトの開発を経験。合同会社PeerQuestを設立し、毎月100名超が参加する「開発PM勉強会」の主催やPMコミュニティ「PM
+                        Club」の共同運営など、PM育成に尽力。複数企業でPM顧問を務める。</p>
+                    <div class="member-tags"><span class="member-tag">プロダクトマネジメント</span><span
+                            class="member-tag">プロジェクトマネジメント</span><span class="member-tag">内製化支援</span><span
+                            class="member-tag">アジャイルコーチ</span></div><a href="https://x.com/maidol_28" target="_blank"
+                        rel="noopener" class="member-x"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>@maidol_28</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <span>自社のエンジニアチームとの連携はどうなりますか？</span>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>既存のチームがいる場合は、チームの開発プロセスに入り込んで一緒に進めます。チームがまだない場合は、つくるPMが単独でプロダクトをつくりはじめ、後からチームが合流できる状態を整えます。
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <span>支援終了後のコードや成果物の所有権は？</span>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>支援期間中につくったコード・デザイン・ドキュメントなどの成果物の所有権は、すべてクライアント企業に帰属します。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <span>社内にPMがいる場合でも依頼できますか？</span>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>はい。社内PMとの壁打ち相手として、あるいは社内PMが手が回らない領域を補完する形でも支援可能です。壁打ち顧問プランでの相談役としての関わり方もあります。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>リモートですか？常駐ですか？</span>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>基本的にはリモートでの支援です。必要に応じてオンサイトでのミーティングや、ワークショップ形式での集中作業にも対応します。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <span>AIを使ってつくるとのことですが、品質は大丈夫ですか？</span>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>つくるPMsのメンバーは全員、デザインやエンジニアリングの第一線で活動してきた専門家です。AIはあくまでスピードを上げるための手段であり、設計判断・品質管理は人間が責任を持っておこないます。各分野の専門家が必要に応じて監修するので、後続の開発にもそのまま使える品質を担保しています。
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>契約期間の縛りはありますか？</span>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>爆速新規事業プランは最短2週間〜のプロジェクト単位です。つくる伴走プランは最低2ヶ月〜の月額契約を推奨していますが、ご相談に応じます。壁打ち顧問プランは月単位での更新です。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <span>どんな技術スタックに対応していますか？</span>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>Web（React / Next.js等）、モバイル（iOS / Android）、バックエンド、インフラまで幅広く対応可能です。プロジェクトに最適な技術選定からご提案します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">まずは30分、<br>話してみませんか？</h2>
+            <p>「プランの選び方がわからない」「まだアイデア段階だけど相談したい」<br>どんな段階でもお気軽にどうぞ。</p>
+            <a href="https://forms.gle/vVJh4pbox4MyoUeX9" class="cta-btn" target="_blank" rel="noopener">無料相談に申し込む<svg viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-copy">&copy; 2026 つくるPMs</div>
+                <div class="footer-links"><a href="privacy.html">プライバシーポリシー</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
